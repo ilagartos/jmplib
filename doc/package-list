@@ -1,0 +1,15 @@
+jmplib
+jmplib.agent
+jmplib.agent.impl
+jmplib.annotations
+jmplib.asm.util
+jmplib.asm.visitor
+jmplib.classversions
+jmplib.classversions.util
+jmplib.compiler
+jmplib.exceptions
+jmplib.javaparser.util
+jmplib.primitives
+jmplib.primitives.impl
+jmplib.sourcecode
+jmplib.util

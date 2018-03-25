@@ -2,11 +2,15 @@
 
 Dynamic languages are widely used due to the flexibility needed in some applications or systems. Therefore, dynamic language metaprogramming features have been incorporated gradually to statically-typed languages. Our work is aimed to improve the flexibility of Java language without modifying the Java Virtual Machine. We developed a library that allows Java language to support two types of metaprogramming features: 1) structural intercession y 2) dynamic code evaluation. This was achieved using class versioning, code instrumentation and Hot-Swapping. In conclusion, the library allows programmers to use these two functionalities in new or legacy code to improve its runtime flexibility.
 
+## Sources and binaries
+
+The last stable version of the source code and its binaries are available in the [releases](https://github.com/ilagartos/jmplib/releases/) section:
+
 ## How to use it!
 
 ### Starting
 
-For this example, we have created a Car class that simulates the fuel consumption when the car travels:
+For this example, we have created a `Car` class that simulates the fuel consumption when the car travels:
 
 ```java
 package addmethod;
@@ -85,7 +89,7 @@ First of all, we have created a car and travelled 250km with it. Later, we have 
 
 ### Little config
 
-We have created a file called config.properties in the root folder. This file have two lines, one specifying the path to the jre inside the JDK and other specifying the path to our source folder.
+We have created a file called `config.properties` in the root folder. This file have two lines, one specifying the path to the jre inside the JDK and other specifying the path to our source folder.
 
 ```
 java.home=C:\\Program Files\\Java\\jdk1.8.0_45\\jre
@@ -117,7 +121,7 @@ After compiling the code, the proyect have the next structure:
 
 ### Execute
 
-Using the library requires specifying the -javaagent parameter. 
+Using the library requires specifying the `-javaagent` parameter. 
 
 ```bash
 java -javaagent:JMPlib_v1.0.0-with-dependencies.jar -cp .;bin/ addmethod.AddMethodMain

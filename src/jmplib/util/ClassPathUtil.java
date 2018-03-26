@@ -63,11 +63,9 @@ public final class ClassPathUtil {
 			while (iterator.hasNext()) {
 				File file = (File) iterator.next();
 				if (file.getAbsolutePath().contains("\\bin")) {
-					file = new File(
+					classPath.add(0, new File(
 							(file.getParent() != null ? file.getParent() + "\\"
-									: "") + PathConstants.MODIFIED_CLASS_PATH);
-					classPath.add(0, file);
-					continue;
+									: "") + PathConstants.MODIFIED_CLASS_PATH));
 				}
 				classPath.add(file);
 			}
